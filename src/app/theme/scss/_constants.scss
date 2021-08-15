@@ -1,0 +1,96 @@
+@use '~@angular/material' as mat;
+$mat-palette: mat.$purple-palette;
+
+$link-normal: mat.get-color-from-palette($mat-palette, 50);
+$link-visited: mat.get-color-from-palette($mat-palette, 900);
+$link-hover: mat.get-color-from-palette($mat-palette, 'A100');
+$link-active: mat.get-color-from-palette($mat-palette, 'A700');
+$purple-palette-primary: mat.get-color-from-palette($mat-palette, 700);
+$purple-palette-200: mat.get-color-from-palette($mat-palette, 200);
+
+// Заголовки
+$old_asphalt_90: #0C0D10;
+
+// Основной текст
+$old_asphalt_80: #181920;
+
+// Текст_примечание
+$old_asphalt_main: #7B819B;
+
+// Неактивный текст
+$old_asphalt_40: #B0B3C3;
+
+// Обводка контролов
+$old_asphalt_30: #D7D9E1;
+
+// Разделители
+$old_asphalt_20: #E8E8EF;
+
+// Фон страницы
+$old_asphalt_10: #F4F3F8;
+
+// Просто белый
+$just_white: #FFFFFF;
+
+$dimmer_color: #8DCFFF;
+
+$blue_primrose_90: #25314F;
+$blue_primrose_80: #2B3858;
+$blue_primrose_60: #0044A2;
+$blue_primrose_main: #0055CB;
+$blue_primrose_40: #4794FF;
+$blue_primrose_20: #E0EDFF;
+
+$amethyst_starling_80: #3D114E;
+$amethyst_starling_60: #621B7C;
+$amethyst_starling_main: #7A229B;
+$amethyst_starling_40: #BB61DC;
+$amethyst_starling_20: #F4E5F9;
+
+$red_rose_80: #66151A;
+$red_rose_60: #A3212A;
+$red_rose_main: #CC2A35;
+$red_rose_40: #E47B83;
+$red_rose_20: #FBE9EA;
+
+$orange_sunset_80: #99540C;
+$orange_sunset_60: #ED861A;
+$orange_sunset_main: #F2A657;
+$orange_sunset_40: #F7CA9A;
+$orange_sunset_20: #FEF6EE;
+
+$fig_green_80: #1F581D;
+$fig_green_60: #318C2E;
+$fig_green_main: #3DAF3A;
+$fig_green_40: #84D682;
+$fig_green_20: #EBF8EA;
+
+$sunglow_80: #D39F00;
+$sunglow_60: #F1B600;
+$sunglow_main: #FFCC2E;
+$sunglow_40: #FFEBAD;
+$sunglow_20: #FFFAE9;
+
+$munsell_blue_80: #006F77;
+$munsell_blue_60: #00949E;
+$munsell_blue_main: #00B9C6;
+$munsell_blue_40: #B5F2F5;
+$munsell_blue_20: #E6FBFD;
+
+$box_shadow_empire: 0 1px 2px rgba(0, 0, 0, 0.1);
+$box_shadow_taipei: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box_shadow_tokyo: 0 4px 8px rgba(0, 0, 0, 0.1);
+$box_shadow_khalifa: 0 8px 12px rgba(0, 0, 0, 0.1);
+$box_shadow_ninja: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+$state_draft: #FFFAE1;
+$state_active: #EBF8EA;
+$state_archive: #F1F7FF;
+
+$waterloo: #7B819B;
+
+$box_shadow_empire: 0 1px 2px rgba(0, 0, 0, 0.1);
+$box_shadow_taipei: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box_shadow_tokyo: 0 4px 8px rgba(0, 0, 0, 0.1);
+$box_shadow_khalifa: 0 8px 12px rgba(0, 0, 0, 0.1);
+$box_shadow_ninja: 0 4px 4px rgba(0, 0, 0, 0.25);

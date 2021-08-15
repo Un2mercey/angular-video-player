@@ -1,0 +1,29 @@
+<div class="video-player-component">
+    <div class="player">
+        <video controls #videoElement>
+            <source src="assets/video/sintel-short.mp4" type="video/mp4">
+            <source src="assets/video/sintel-short.webm" type="video/webm">
+            <!-- fallback content here -->
+        </video>
+        <div class="controls">
+            <button mat-icon-button (click)="playPauseMedia()">
+                <mat-icon color="primary">
+                    {{currentButton}}
+                </mat-icon>
+            </button>
+            <button mat-icon-button (click)="stop()">
+                <mat-icon color="primary">stop</mat-icon>
+            </button>
+            <div class="timer" #progressElement>
+                <div [style.width.px]="progress$ | async"></div>
+                <span [innerHTML]="timer$ | async"></span>
+            </div>
+            <button mat-icon-button (click)="rwd()">
+                <mat-icon color="primary">fast_rewind</mat-icon>
+            </button>
+            <button mat-icon-button (click)="fwd()">
+                <mat-icon color="primary">fast_forward</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

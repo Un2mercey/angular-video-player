@@ -1,0 +1,93 @@
+@mixin nowrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin unselectable {
+    -webkit-touch-callout: none;    /* iOS Safari               */
+    -webkit-user-select: none;     /* Chrome/Safari/Opera      */
+    -khtml-user-select: none;     /* Konqueror                */
+    -moz-user-select: none;      /* Firefox                  */
+    -ms-user-select: none;      /* Internet Explorer/Edge   */
+    user-select: none;         /* Non-prefixed version     */
+}
+
+@function get-sides() {
+    $sides: (
+        top, right, bottom, left
+    );
+    @return $sides;
+}
+
+@mixin margins() {
+    $step: 4;
+    $sides: get-sides();
+    @for $i from (-20) through 60 {
+        @each $key in $sides {
+            .marg-#{$key}-#{$i} {
+                margin-#{$key}: #{$i}px;
+            }
+            .marg-#{$key}-#{$i}-imp {
+                margin-#{$key}: #{$i}px !important;
+            }
+        }
+        .margin-#{$i} {
+            margin: #{$i}px;
+        }
+        .margin-#{$i}-imp {
+            margin: #{$i}px !important;
+        }
+        $i: $i + $step;
+    }
+
+    @each $key in $sides {
+        .marg-#{$key}-auto {
+            margin-#{$key}: auto
+        }
+    }
+}
+
+@mixin paddings() {
+    $step: 4;
+    $sides: get-sides();
+    @for $i from 0 through 60 {
+        @each $key in $sides {
+            .pad-#{$key}-#{$i} {
+                padding-#{$key}: #{$i}px;
+            }
+            .pad-#{$key}-#{$i}-imp {
+                padding-#{$key}: #{$i}px !important;
+            }
+        }
+        .pad-#{$i} {
+            padding: #{$i}px;
+        }
+        .pad-#{$i}-imp {
+            padding: #{$i}px !important;
+        }
+        $i: $i + $step;
+    }
+}
+
+@mixin width() {
+    $step: 10;
+    @for $i from 10 through 500 {
+      .min-width-#{$i} {
+        min-width: #{$i}px;
+      }
+      .max-width-#{$i} {
+        max-width: #{$i}px;
+      }
+      .width-#{$i} {
+        width: #{$i}px;
+      }
+      $i: $i + $step;
+    }
+    @for $i from 10 through 100 {
+      .width-#{$i}-per {
+        width: calc(#{$i}*1%);
+      }
+      $width: #{$i} + $step
+    }
+}

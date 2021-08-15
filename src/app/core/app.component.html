@@ -1,0 +1,8 @@
+<div *ngIf="spinnerService.isLoading | async" class="global-ui-loading">
+    <mat-spinner mode="indeterminate" diameter="120"></mat-spinner>
+</div>
+<mat-toolbar color="primary">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/media-player">Video player</a>
+</mat-toolbar>
+<router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+.global-ui-loading {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2021;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    padding: 0 25px;
+    text-decoration: none;
+}

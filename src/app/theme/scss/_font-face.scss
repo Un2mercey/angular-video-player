@@ -1,0 +1,26 @@
+@use '~@angular/material' as mat;
+
+$custom-typography: mat.define-typography-config(
+    $font-family: 'Lato'
+);
+
+@font-face {
+    font-family: 'HeydingsControlsRegular';
+    src: url('/assets/fonts/heydings_controls-webfont.eot');
+    src: url('/assets/fonts/heydings_controls-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/heydings_controls-webfont.woff') format('woff'),
+    url('/assets/fonts/heydings_controls-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@include mat.all-component-typographies($custom-typography);
+
+$player-typography: mat.define-typography-config(
+    $font-family: 'HeydingsControlsRegular'
+);
+
+.player-font {
+    @include mat.typography-level($player-typography, 'body-1');
+}
