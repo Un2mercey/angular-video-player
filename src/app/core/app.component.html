@@ -2,7 +2,8 @@
     <mat-spinner mode="indeterminate" diameter="120"></mat-spinner>
 </div>
 <mat-toolbar color="primary">
-    <a routerLink="/home">Home</a>
-    <a routerLink="/media-player">Video player</a>
+    <a (click)="changeState('/home')">Home</a>
+    <a (click)="changeState('/sintel')">Sintel</a>
+    <a (click)="changeState('/tears-of-steal')">Tears of steal</a>
 </mat-toolbar>
 <router-outlet></router-outlet>

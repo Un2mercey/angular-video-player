@@ -1,3 +1,5 @@
+@import '../theme/scss/constants';
+
 .global-ui-loading {
     width: 100vw;
     height: 100vh;
@@ -6,9 +8,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 a {
     padding: 0 25px;
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+mat-toolbar {
+    box-shadow: $material-shadow;
 }

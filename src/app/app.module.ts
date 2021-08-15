@@ -1,29 +1,25 @@
 import { NgModule } from '@angular/core';
+import { AppUiModule } from './app-ui.module';
 import { AppComponent } from './core/app.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HomeComponent } from './pages/home/home.component';
-import { VideoPlayerComponent } from './pages/video-player/video-player.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
+import { SintelComponent } from './pages/sintel/sintel.component';
+import { AppRoutingModule } from './app-routing.module';
+import { TearsOfStealComponent } from './pages/tears-of-steal/tears-of-steal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
-        VideoPlayerComponent,
+        SintelComponent,
+        TearsOfStealComponent,
     ],
     imports: [
+        AppUiModule,
         BrowserModule,
         AppRoutingModule,
-        BrowserAnimationsModule,
-        MatProgressSpinnerModule,
-        MatToolbarModule,
-        MatButtonModule,
-        MatIconModule,
+        BrowserAnimationsModule
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { SpinnerService } from '../services/spinner.service';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -9,8 +10,16 @@ import { SpinnerService } from '../services/spinner.service';
 })
 export class AppComponent {
     constructor(
-        public readonly spinnerService: SpinnerService
+        public readonly spinnerService: SpinnerService,
+        private readonly router: Router
     ) {
-        // this.spinnerService.setIsLoading(true);
+    }
+
+    public changeState(state: string): void {
+        this.spinnerService.setIsLoading(true);
+        setTimeout(() => {
+            void this.router.navigate([state]);
+            this.spinnerService.setIsLoading(false);
+        }, 2000);
     }
 }

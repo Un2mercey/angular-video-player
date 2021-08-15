@@ -8,6 +8,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 2rem;
+    background-color: rgb(58, 58, 58);
+    color: hsla(0,0%,100%,.7);
 
     app-root {
         width: 100vw;
@@ -34,6 +36,24 @@ body {
             &:active {
                 color: $link-active;
             }
+        }
+
+        .mdn-logo {
+            margin: 10px;
+            box-shadow: $box_shadow_ninja;
+            width: 260px;
+            height: 36px;
+            background: $purple-palette-primary;
+            svg {
+                height: 80px;
+            }
+        }
+
+        .video-player {
+            position: absolute;
+            top: 128px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
