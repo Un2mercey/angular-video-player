@@ -8,7 +8,7 @@
         "prestart": "npm run lint-fix",
         "start": "ng serve",
         "build": "ng build",
-        "deploy": "ng build --configuration=production --base-href=\"https://un2mercey.github.io/angular-video-player/\"",
+        "deploy": "ng deploy --base-href=/angular-video-player/",
         "watch": "ng build --watch --configuration=development",
         "test": "ng test",
         "lint": "ng lint",
