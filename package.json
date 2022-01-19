@@ -1,6 +1,6 @@
 {
     "name": "angular-video-player",
-    "homepage": "https://un2mercey.github.io/angular-video-player",
+    "homepage": "https://un2mercey.github.io/angular-video-player/",
     "version": "0.0.0",
     "scripts": {
         "i": "npm i --no-fund",
@@ -8,7 +8,7 @@
         "prestart": "npm run lint-fix",
         "start": "ng serve",
         "build": "ng build",
-        "deploy": "ng build --configuration=production",
+        "deploy": "ng build --configuration=production --base-href=\"https://un2mercey.github.io/angular-video-player/\"",
         "watch": "ng build --watch --configuration=development",
         "test": "ng test",
         "lint": "ng lint",
