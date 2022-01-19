@@ -16,3 +16,8 @@
 
 - run <code>npm run i</code>
 - run <code>npm start</code>
+
+
+### Deployment
+1. Replace <code>/assets/</code> to <code>/angular-video-player/assets/</code>
+2. Run <code>npm run deploy</code>
