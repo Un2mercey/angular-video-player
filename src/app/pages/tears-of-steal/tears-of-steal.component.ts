@@ -148,7 +148,7 @@ export class TearsOfStealComponent implements OnInit, AfterViewInit, OnDestroy {
         this._videoContainer.nativeElement.setAttribute('data-fullscreen', state);
     }
 
-    private readonly loadedMetaDataHandler = (e: Event): void => {
+    private readonly loadedMetaDataHandler = (): void => {
         console.log(`[Metadata loaded] Video width is: ${this.video.duration} sec`);
     };
 
@@ -156,7 +156,7 @@ export class TearsOfStealComponent implements OnInit, AfterViewInit, OnDestroy {
         this._progress$.next(Math.floor(e * 100));
     };
 
-    private readonly videoEndedHandler = (e: Event): void => {
+    private readonly videoEndedHandler = (): void => {
         void this.video.pause();
         this.playPauseBtn = PlayPause.Play;
         this._cdr.detectChanges();
