@@ -1,9 +1,0 @@
-<div *ngIf="spinnerService.isLoading | async" class="global-ui-loading">
-    <mat-spinner mode="indeterminate" diameter="120"></mat-spinner>
-</div>
-<mat-toolbar color="primary">
-    <a (click)="changeState('/home')">Home</a>
-    <a (click)="changeState('/sintel')">Sintel</a>
-    <a (click)="changeState('/tears-of-steal')">Tears of steal</a>
-</mat-toolbar>
-<router-outlet></router-outlet>
